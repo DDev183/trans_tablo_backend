@@ -194,13 +194,37 @@ public class DataProvider {
         destinations.clear();
 
 
+        destinations.put("a-b", "Восточное депо — улица Димитрова");
+        destinations.put("b-a", "Улица Димитрова — Восточное депо");
+        destinations.put("b-d", "улица Димитрова - D");
+        routeList.add(new Route(12, destinations));
+        destinations.clear();
+
+        destinations.put("a-b", "Улица П.Метальникова — ж/д вокзал \"Краснодар-I\"");
+        destinations.put("b-a", "Ж/д вокзал \"Краснодар-I\" — улица П.Метальникова");
+        destinations.put("a-d", "Улица П.Метальникова — Западное депо");
+        destinations.put("b-d", "Ж/д вокзал \"Краснодар-I\" — Западное депо");
+        destinations.put("d-a", "Западное депо — улица П.Метальникова");
+        destinations.put("d-b", "Западное депо — ж/д вокзал \"Краснодар-I\"");
+        routeList.add(new Route(15, destinations));
+        destinations.clear();
+
+
+        destinations.put("a-b", "Улица Декабристов — хладокомбинат");
+        destinations.put("b-a", "Хладокомбинат — улица Декабристов");
+        destinations.put("a-d", "Улица Декабристов — Восточное депо");
+        destinations.put("b-d", "Хладокомбинат — Восточное депо");
+        destinations.put("d-a", "Восточное депо — улица Декабристов");
+        destinations.put("d-b", "Восточное депо — хладокомбинат");
+        routeList.add(new Route(20, destinations));
+        destinations.clear();
+
         destinations.put("a-b", "");
         destinations.put("b-a", "");
         destinations.put("a-d", "");
         destinations.put("b-d", "");
         destinations.put("d-a", "");
         destinations.put("d-b", "");
-
     }
 
 
